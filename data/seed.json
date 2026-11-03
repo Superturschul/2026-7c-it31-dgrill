@@ -1,11 +1,11 @@
 [
-  { "id": 1, "title": "Git-Repository anlegen", "category": "Setup", "note": "Aus dem Template erstellt und in VS Code geklont.", "done": true, "createdAt": "2026-10-19T08:00:00.000Z" },
-  { "id": 2, "title": "API testen", "category": "Backend", "note": "GET /api/items im Browser öffnen.", "done": false, "createdAt": "2026-10-19T08:05:00.000Z" },
-  { "id": 3, "title": "Oberfläche gestalten", "category": "Frontend", "note": "Eigene Farben in style.css festlegen.", "done": false, "createdAt": "2026-10-19T08:10:00.000Z" },
-  { "id": 4, "title": "Daten dauerhaft speichern", "category": "Datenbank", "note": "SQLite statt Arbeitsspeicher.", "done": false, "createdAt": "2026-10-19T08:15:00.000Z" },
-  { "id": 5, "title": "Als Container starten", "category": "Deployment", "note": "docker compose up", "done": false, "createdAt": "2026-10-19T08:20:00.000Z" },
-  { "id": 6, "title": "Per iframe einbetten", "category": "Deployment", "note": "Statischer Build in eine HTML-Seite einbinden.", "done": false, "createdAt": "2026-10-19T08:25:00.000Z" },
-  { "id": 7, "title": "Formulareingaben validieren", "category": "Backend", "note": "Eingaben mit Zod prüfen und verständliche Fehlermeldungen zurückgeben.", "done": false, "createdAt": "2026-10-19T08:30:00.000Z" },
-  { "id": 8, "title": "API-Tests ergänzen", "category": "Tests", "note": "Erfolgreiche und ungültige Anfragen für die Einträge testen.", "done": false, "createdAt": "2026-10-19T08:35:00.000Z" },
-  { "id": 9, "title": "Lade- und Fehlerzustände anzeigen", "category": "Frontend", "note": "Rückmeldungen während des Ladens und bei API-Fehlern ergänzen.", "done": false, "createdAt": "2026-10-19T08:40:00.000Z" }
+  { "id": 1, "title": "Anforderungen für die HÜ-Checkliste sammeln", "category": "Planung", "note": "Festlegen, welche Informationen eine Hausübung braucht: Fach, Aufgabe und Abgabetermin.", "done": false, "createdAt": "2026-11-03T09:00:00.000Z" },
+  { "id": 2, "title": "HÜs nach Fach gruppieren", "category": "Planung", "note": "Eine übersichtliche Zuordnung zu Fächern wie Deutsch, Mathematik und Englisch vorbereiten.", "done": false, "createdAt": "2026-11-03T09:05:00.000Z" },
+  { "id": 3, "title": "HÜ-Einträge in der Oberfläche anzeigen", "category": "Oberfläche", "note": "Aufgabe, Fach und Abgabetermin für jeden Eintrag darstellen.", "done": false, "createdAt": "2026-11-03T09:10:00.000Z" },
+  { "id": 4, "title": "Neue HÜ über ein Formular hinzufügen", "category": "Oberfläche", "note": "Eingabefelder für Fach, Aufgabenbeschreibung und Abgabetermin erstellen.", "done": false, "createdAt": "2026-11-03T09:15:00.000Z" },
+  { "id": 5, "title": "Erledigte HÜs abhaken", "category": "Funktion", "note": "Eine HÜ als erledigt markieren und den Status sichtbar anzeigen.", "done": false, "createdAt": "2026-11-03T09:20:00.000Z" },
+  { "id": 6, "title": "Eingaben prüfen", "category": "Funktion", "note": "Verhindern, dass eine HÜ ohne Fach oder Aufgabenbeschreibung gespeichert wird.", "done": false, "createdAt": "2026-11-03T09:25:00.000Z" },
+  { "id": 7, "title": "HÜs nach Abgabetermin sortieren", "category": "Funktion", "note": "Die nächstfälligen Hausübungen in der Liste zuerst anzeigen.", "done": false, "createdAt": "2026-11-03T09:30:00.000Z" },
+  { "id": 8, "title": "HÜ-Checkliste dauerhaft speichern", "category": "Daten", "note": "Einträge und Erledigt-Status nach einem Neustart beibehalten.", "done": false, "createdAt": "2026-11-03T09:35:00.000Z" },
+  { "id": 9, "title": "HÜ-Checkliste testen", "category": "Tests", "note": "Hinzufügen, Abhaken, Sortieren und ungültige Eingaben überprüfen.", "done": false, "createdAt": "2026-11-03T09:40:00.000Z" }
 ]
