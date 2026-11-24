@@ -24,7 +24,10 @@ async function request<T>(path: string, init?: RequestInit): Promise<T> {
 }
 
 const httpApi: Api = {
-  list: () => request('/items'),
+  async list() {
+    const items = await request<Item[]>('/items')
+    return withoutSeedItems(items)
+  },
   create: (input) => request('/items', { method: 'POST', body: JSON.stringify(input) }),
   update: (id, patch) => request(`/items/${id}`, { method: 'PATCH', body: JSON.stringify(patch) }),
   remove: (id) => request<void>(`/items/${id}`, { method: 'DELETE' }),
@@ -32,6 +35,11 @@ const httpApi: Api = {
 
 // --- Aufgabe 7: Statischer Modus ohne Backend (localStorage) -------------------------
 const KEY = 'kepler-fullstack-items'
+const seedIds = new Set((seed as Item[]).map((item) => item.id))
+
+function withoutSeedItems(items: Item[]) {
+  return items.filter((item) => !seedIds.has(item.id))
+}
 
 function load(): Item[] {
   try {
@@ -53,7 +61,7 @@ function save(items: Item[]) {
 
 const localApi: Api = {
   async list() {
-    return load()
+    return withoutSeedItems(load())
   },
   async create(input) {
     const items = load()
