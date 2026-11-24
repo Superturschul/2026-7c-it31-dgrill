@@ -1,6 +1,8 @@
 import type { Item, ItemInput, ItemPatch } from '../shared/schemas'
 import seed from '../../data/seed.json'
 
+//Lies AGENTS.md. Installiere die Abhängigkeiten, starte die Entwicklungsumgebung mit "npm run dev" und prüfe, ob http://localhost:5173 und http://localhost:3000/api/items erreichbar sind.
+
 // Das Frontend spricht nur mit dieser Schnittstelle. Welche Variante dahinter steckt,
 // entscheidet der Build-Modus:
 //   npm run dev / build        -> HttpApi  (echtes Backend unter /api)
